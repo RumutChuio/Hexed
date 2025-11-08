@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Rohzik-Portofolio</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="brand">Rohzik</div>
+                <nav aria-label="navigasi">
+                    <a href="#about">Tentang</a>
+                    <a href="#skills">Keahlian</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </header>
+            <main>
+                <section class="hero" id="home">
+                    <div>
+                        <h1>Hai Saya <strong>Rohzik</strong></h1>
+                        <p>
+                            Saya seorang pelajar yang sedang belajar menjadi
+                            FrontEnd Developer
+                        </p>
+                        <p><a class="btn" href="#contact">Hubungi saya</a></p>
+                    </div>
+                </section>
+                <section id="about" class="card" aria-labelledby="about-title">
+                    <h2
+                        id="about-title"
+                        style="margin: 0 0 8px 0"
+                        font-size:18px
+                    >
+                        Tentang Saya
+                    </h2>
+                    <p style="margin: 0; color: var(--muted)">
+                        Saya percaya bahwa error saat ngoding lebih menyakitkan
+                        daripada putus cinta
+                    </p>
+                </section>
+                <section id="skills" style="margin-top: 18px">
+                    <h3 style="margin: 0 0 10px 0; font-size: 16px">
+                        Keahlian
+                    </h3>
+                    <div class="skills">
+                        Front-end Developer (HTML, CSS, JavaScript)
+                    </div>
+                    <div class="skills">Network Engineering</div>
+                </section>
+                <section
+                    id="contact"
+                    style="margin-top: 20px"
+                    class="card"
+                    aria-labelledby="contact-title"
+                >
+                    <h3
+                        id="contact-title"
+                        style="margin: 0 0 8px 0; font-size: 16px"
+                    >
+                        contact
+                    </h3>
+                    <div class="contact">
+                        <div style="color: var(--muted)">
+                            Punya saran atau ide? Chat saya di
+                        </div>
+                        <div
+                            style="
+                                display: flex;
+                                gap: 12px;
+                                flex-wrap: wrap;
+                                margin-top: 6px;
+                            "
+                        >
+                            <a class="btn" href="https://discord.gg/VK4rH49k"
+                                >Discord</a
+                            >
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer><span id="year"></span> Butuh asupan mie ayam</footer>
+        </div>
+        <script>
+            document.getElementById("year").textContent =
+                new Date().getFullYear();
+        </script>
+    </body>
+</html>
